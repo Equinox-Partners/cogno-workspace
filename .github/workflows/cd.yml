@@ -10,15 +10,15 @@ on:
 
                 steps:
                     - uses: actions/checkout@v4
-                        
+
                             - name: Set up deployment environment
                                   run: |
                                           echo "Setting up deployment environment"
-                                                  
+
                                                       - name: Build application
                                                             run: |
                                                                     echo "Building application..."
-                                                                            
+
                                                                                 - name: Deploy to production
                                                                                       run: |
                                                                                               echo "Deploying application to production..."
