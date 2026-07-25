@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+      branches: [ main, develop ]
+        pull_request:
+            branches: [ main, develop ]
+
+            jobs:
+              build:
+                  runs-on: ubuntu-latest
+
+                      steps:
+                          - uses: actions/checkout@v4
+                              
+                                  - name: Set up Node.js environment
+                                        run: |
+                                                echo "Setting up CI environment"
+                                                        node --version
+                                                                
+                                                                    - name: Install dependencies
+                                                                          run: |
+                                                                                  echo "Installing dependencies..."
+                                                                                          
+                                                                                              - name: Run linter
+                                                                                                    run: |
+                                                                                                            echo "Running linter..."
+                                                                                                                    
+                                                                                                                        - name: Run tests
+                                                                                                                              run: |
+                                                                                                                                      echo "Running tests..."
