@@ -1,28 +1,10 @@
 name: CD
-
 on:
   push:
-      branches: [ main ]
-
+      branches: [main]
       jobs:
         deploy:
             runs-on: ubuntu-latest
-
                 steps:
-                    - uses: actions/checkout@v4
-
-                            - name: Set up deployment environment
-                                  run: |
-                                          echo "Setting up deployment environment"
-
-                                                      - name: Build application
-                                                            run: |
-                                                                    echo "Building application..."
-
-                                                                                - name: Deploy to production
-                                                                                      run: |
-                                                                                              echo "Deploying application to production..."
-                                                                                                      
-                                                                                                          - name: Verify deployment
-                                                                                                                run: |
-                                                                                                                        echo "Verifying deployment..."
+                      - uses: actions/checkout@v4
+                            - run: echo "CD workflow is working"
