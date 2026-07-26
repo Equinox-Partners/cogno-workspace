@@ -1,0 +1,53 @@
+{
+    "workspaceId": "cogno-workspace-001",
+    "workspaceName": "Cogno Worker Execution Environment",
+    "repositoryUrl": "https://github.com/Equinox-Partners/cogno-workspace",
+    "description": "Shared GitHub workspace for Cogno workers to execute tasks with independent branches and worktrees",
+    "cicdIntegration": {
+          "enabled": true,
+          "provider": "github-actions",
+          "ciWorkflow": ".github/workflows/ci.yml",
+          "cdWorkflow": ".github/workflows/cd.yml",
+          "triggerOnTaskCompletion": true,
+          "notificationWebhook": "https://cogno-api.example.com/webhooks/github"
+        },
+    "cognoIntegration": {
+          "apiVersion": "v1",
+          "apiEndpoint": "https://cogno-api.example.com",
+          "requiresApiToken": true,
+          "tokenSecretName": "COGNO_API_TOKEN",
+          "workspaceTokenSecretName": "COGNO_WORKSPACE_ID"
+        },
+    "taskSettings": {
+          "branchNamingPattern": "task-{taskId}",
+          "branchPrefix": "task-",
+          "worktreeLocation": ".cogno/agents/task-{taskId}",
+          "maxConcurrentTasks": 10,
+          "taskTimeout": 3600,
+          "requirePullRequestReview": false,
+          "autoMergeOnSuccess": false,
+          "deleteBranchAfterMerge": true
+        },
+    "validation": {
+          "requiredFiles": [
+                  ".cogno/repo.json",
+                  ".cogno/app-context.md",
+                  ".github/workflows/ci.yml",
+                  ".github/workflows/cd.yml"
+                ],
+          "requiredGitHubSecrets": [
+                  "COGNO_API_TOKEN",
+                  "COGNO_API_ENDPOINT",
+                  "COGNO_WORKSPACE_ID"
+                ]
+        },
+    "features": {
+          "parallelExecution": true,
+          "rollbackOnFailure": true,
+          "healthCheck": true,
+          "slackNotifications": false,
+          "detailedLogging": true
+        },
+    "version": "1.0.0",
+    "lastUpdated": "2026-07-26T00:00:00Z"
+  }
