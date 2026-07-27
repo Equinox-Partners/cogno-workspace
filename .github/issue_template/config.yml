@@ -1,0 +1,15 @@
+# Issue template configuration for Equinox Partners Cogno Workspace
+# See https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-template-choice
+
+blank_issues_enabled: false
+
+contact_links:
+  - name: GitHub Documentation
+    url: https://docs.github.com
+    about: GitHub platform documentation and guides
+  - name: Git Documentation
+    url: https://git-scm.com/doc
+    about: Git version control system documentation
+  - name: GitHub Actions
+    url: https://github.com/Equinox-Partners/cogno-workspace/actions
+    about: View workflow runs and CI/CD status

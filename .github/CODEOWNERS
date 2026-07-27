@@ -1,0 +1,21 @@
+# CODEOWNERS for Equinox Partners Cogno Workspace
+# This file defines code ownership for different parts of the repository
+# See https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# GitHub Actions Workflows
+.github/workflows/ @Equinox-Partners/cogno-admins
+
+# Cogno Configuration
+.cogno/ @Equinox-Partners/cogno-admins
+
+# Root Configuration Files
+CLAUDE.md @Equinox-Partners/cogno-admins
+CI_CD_GUIDE.md @Equinox-Partners/cogno-admins
+QUICK_REFERENCE.md @Equinox-Partners/cogno-admins
+
+# Git Configuration
+.gitignore @Equinox-Partners/cogno-admins
+.gitattributes @Equinox-Partners/cogno-admins
+
+# Default owner for everything
+* @Equinox-Partners/cogno-admins
