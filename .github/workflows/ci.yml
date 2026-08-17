@@ -1,12 +1,12 @@
 name: CI
 on:
   push:
-      branches: [main, develop]
-        pull_request:
-            branches: [main, develop]
-            jobs:
-              test:
-                  runs-on: ubuntu-latest
-                      steps:
-                            - uses: actions/checkout@v4
-                                  - run: echo "CI workflow is working"
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "CI workflow is working"
