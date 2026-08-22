@@ -1,0 +1,52 @@
+name: Cogno ミーティング自動転記
+
+on:
+  # 毎日 JST 9:00 に実行（UTC 0:00）
+  schedule:
+    - cron: "0 0 * * *"
+
+  # 手動実行
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry-run（Notion に書き込まない）"
+        type: boolean
+        default: false
+      fetch_detail:
+        description: "参加者情報を取得する（低速）"
+        type: boolean
+        default: false
+
+jobs:
+  sync:
+    name: Sync Meetings to Notion
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+
+      - name: Python をセットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 依存パッケージをインストール
+        run: pip install requests python-dateutil
+
+      - name: ミーティングを Notion へ転記
+        env:
+          COGNO_API_TOKEN: ${{ secrets.COGNO_API_TOKEN }}
+          COGNO_API_ENDPOINT: ${{ secrets.COGNO_API_ENDPOINT }}
+          COGNO_WORKSPACE_ID: ${{ secrets.COGNO_WORKSPACE_ID }}
+          NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+        run: |
+          FLAGS=""
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            FLAGS="$FLAGS --dry-run"
+          fi
+          if [ "${{ github.event.inputs.fetch_detail }}" = "true" ]; then
+            FLAGS="$FLAGS --fetch-detail"
+          fi
+          python scripts/sync_meetings_to_notion.py $FLAGS
