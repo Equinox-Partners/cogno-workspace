@@ -19,8 +19,9 @@
           "workspaceTokenSecretName": "COGNO_WORKSPACE_ID"
         },
     "taskSettings": {
-          "branchNamingPattern": "task-{taskId}",
+          "branchNamingPattern": "task-{taskId} or cogno/<task-name>-{taskId}",
           "branchPrefix": "task-",
+          "alternateBranchPrefix": "cogno/",
           "worktreeLocation": ".cogno/agents/task-{taskId}",
           "maxConcurrentTasks": 10,
           "taskTimeout": 3600,
