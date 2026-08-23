@@ -1,12 +1,29 @@
 name: CI
 on:
   push:
-    branches: [main, develop]
+    branches:
+      - main
+      - develop
+      - "task-*"
+      - "cogno/**"
   pull_request:
     branches: [main, develop]
+  workflow_dispatch:
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Validate Cogno worker branch
+        run: |
+          branch="${GITHUB_HEAD_REF:-${GITHUB_REF_NAME}}"
+          case "$branch" in
+            main|develop|task-*|cogno/*)
+              echo "Cogno worker branch is valid: $branch"
+              ;;
+            *)
+              echo "Invalid branch for Cogno worker: $branch" >&2
+              exit 1
+              ;;
+          esac
       - run: echo "CI workflow is working"

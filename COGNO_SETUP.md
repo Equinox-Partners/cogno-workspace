@@ -72,7 +72,7 @@ You must add the following secrets to your GitHub repository settings:
 
                               When creating a new Cogno task:
 
-                              1. Create a branch with the naming convention: `task-<TASK_ID>`
+                              1. Create a branch with the naming convention: `task-<TASK_ID>` or `cogno/<task-name>-<TASK_ID>`
                                  ```bash
                                     git checkout -b task-12345
                                        ```
@@ -128,8 +128,8 @@ You must add the following secrets to your GitHub repository settings:
                                                          **Problem**: CI workflow fails at "Validate Cogno task structure"
 
                                                          **Solution**:
-                                                         - Ensure branch name follows pattern: `task-<ID>` (e.g., `task-12345`)
-                                                         - Acceptable branches: `main`, `develop`, or `task-*`
+                                                         - Ensure branch name follows pattern: `task-<ID>` (e.g., `task-12345`) or `cogno/<task-name>-<ID>`
+                                                         - Acceptable branches: `main`, `develop`, `task-*`, or `cogno/*`
                                                          - Rename the branch if needed:
                                                            ```bash
                                                              git branch -m old-name task-12345
