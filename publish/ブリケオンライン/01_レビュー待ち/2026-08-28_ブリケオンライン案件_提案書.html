@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>BRIQUET ONLINE（ブリケオンライン）様 ご提案書</title>
+<style>
+  .viz-root {
+    color-scheme: light;
+    --surface-1:      #fcfcfb;
+    --page:           #f9f9f7;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted:     #898781;
+    --grid:           #e1e0d9;
+    --border:         rgba(11,11,11,0.10);
+    --series-1: #2a78d6; /* BRIQUET ONLINE */
+    --series-2: #1baf7a; /* シリウスタバコ */
+    --series-3: #eda100; /* タバコエクスプレス */
+    --series-4: #008300; /* いづみや */
+    --series-5: #4a3aa7; /* 総合モール(楽天/価格.com) */
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--text-primary);
+    font-family: system-ui, -apple-system, "Hiragino Sans", "Segoe UI", sans-serif;
+    font-size: 14px;
+    line-height: 1.75;
+  }
+  .page {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 40px 48px 8px;
+    background: var(--surface-1);
+  }
+  .cover {
+    padding: 72px 48px 56px;
+    background: var(--surface-1);
+    border-bottom: 1px solid var(--border);
+  }
+  .cover .eyebrow { color: var(--text-secondary); font-size: 13px; letter-spacing: .08em; }
+  .cover h1 { font-size: 30px; margin: 14px 0 6px; line-height: 1.4; }
+  .cover .sub { color: var(--text-secondary); font-size: 15px; margin-bottom: 28px; }
+  .cover .meta { color: var(--text-muted); font-size: 12.5px; }
+  h2 {
+    font-size: 19px;
+    margin: 40px 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--text-primary);
+  }
+  h3 { font-size: 15.5px; margin: 22px 0 8px; color: var(--text-primary); }
+  h3 .num { color: var(--series-1); margin-right: 6px; }
+  p { margin: 8px 0; }
+  .lede { font-size: 15px; color: var(--text-secondary); }
+  ul, ol { margin: 8px 0; padding-left: 22px; }
+  li { margin: 4px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 13px; }
+  th, td { border: 1px solid var(--grid); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #f3f2ee; color: var(--text-secondary); font-weight: 600; font-size: 12.5px; }
+  .card {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin: 12px 0;
+    background: var(--surface-1);
+  }
+  .card.accent { border-left: 4px solid var(--series-1); }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 14px 0; }
+  .tag {
+    display: inline-block;
+    font-size: 11.5px;
+    color: var(--text-secondary);
+    background: #f0efec;
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin-bottom: 6px;
+  }
+  .note {
+    font-size: 12.5px;
+    color: var(--text-muted);
+    background: #f3f2ee;
+    border-left: 3px solid var(--text-muted);
+    padding: 10px 14px;
+    margin: 10px 0;
+  }
+  .todo {
+    font-size: 12.5px;
+    color: #7a5200;
+    background: #fdf3df;
+    border-left: 3px solid var(--series-3);
+    padding: 10px 14px;
+    margin: 10px 0;
+  }
+  .src { font-size: 11.5px; color: var(--text-muted); }
+  .src a { color: var(--text-muted); }
+  .placeholder {
+    color: var(--text-muted);
+    font-style: italic;
+  }
+  .quad-caption { font-size: 12px; color: var(--text-muted); margin-top: 6px; }
+  .legend-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 8px; font-size: 12px; color: var(--text-secondary); }
+  .legend-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
+  .footer-page { text-align: center; color: var(--text-muted); font-size: 11px; padding: 18px 0 36px; }
+  @media print {
+    body { background: #fff; }
+    .page, .cover { max-width: none; }
+    h2 { break-after: avoid; }
+    .card { break-inside: avoid; }
+  }
+</style>
+</head>
+<body class="viz-root">
+
+  <div class="cover">
+    <div class="eyebrow">CONFIDENTIAL / ご提案書</div>
+    <h1>BRIQUET ONLINE（ブリケオンライン）様<br>ECサイト成長パートナーシップ ご提案</h1>
+    <div class="sub">リアル接点（スモーカーズカフェ）× オンラインを繋ぐ、喫煙文化提案型の成長施策</div>
+    <div class="meta">作成日：2026年8月28日　｜　提出先：株式会社元林 BRIQUET事業ご担当者様　｜　作成：当社 提案チーム</div>
+  </div>
+
+  <div class="page">
+
+    <h2>1. エグゼクティブサマリー</h2>
+    <p class="lede">
+      BRIQUET ONLINE様は、創業1905年・120年超の喫煙具事業の知見と、大手町プレイス店・越谷レイクタウン店の
+      2つのリアル店舗（スモーカーズカフェ）を持つ、数少ない「リアル×オンライン」両輪の喫煙具専門EC事業者です。
+      競合の多くはオンライン専業か総合モールへの出店に留まる中、貴社は<strong>体験を伴う喫煙文化の提案</strong>という
+      独自ポジションを取れる立場にあります。本提案では、この強みを起点に「①リアル接点活用」「②サブスク設計」
+      「③商品企画」の3施策を軸に、購入頻度と顧客単価の両方を引き上げるロードマップをご提案します。
+    </p>
+    <div class="grid3">
+      <div class="card accent">
+        <div class="tag">強み①</div>
+        <div>リアル店舗2拠点によるO2O接点。競合はオンライン専業が中心。</div>
+      </div>
+      <div class="card accent">
+        <div class="tag">強み②</div>
+        <div>業界で数少ない画像認証による年齢確認導入済み。信頼性の土台がある。</div>
+      </div>
+      <div class="card accent">
+        <div class="tag">強み③</div>
+        <div>120年の歴史（ハッカパイプ等）が独自商品企画・ストーリーの資産になる。</div>
+      </div>
+    </div>
+
+    <h2>2. 貴社の現状理解</h2>
+    <h3><span class="num">2.1</span>事業概要</h3>
+    <p>
+      BRIQUET（ブリケ、フランス語で「ライター」の意）は、株式会社元林が展開する喫煙関連事業です。
+      同社は1905年に大阪で創業し、当初はステッキを主力としていましたが、1930年代に「ハッカパイプ」等の
+      喫煙具がヒットしたことを契機に、1937〜1939年頃には取扱高の7割を喫煙具が占めるまでに転換。
+      以来100年以上、喫煙関連事業を事業の柱としてきました。2025年に創業120周年を迎えています。
+    </p>
+    <p>
+      現在のBRIQUET事業は、リアル店舗「スモーカーズカフェ ブリケ」（大手町プレイス店・越谷レイクタウン店の
+      2店舗）と、ECサイト「BRIQUET ONLINE」の二本柱です。単なる販売サイトではなく、紙巻たばこ・手巻き・
+      葉巻・パイプ・キセルまで喫煙文化全般をカバーする提案型ECである点が特徴です。
+    </p>
+
+    <h3><span class="num">2.2</span>直近の取り組み</h3>
+    <table>
+      <tr><th>時期</th><th>取り組み</th><th>ポイント</th></tr>
+      <tr>
+        <td>2017年3月</td>
+        <td>BRIQUET ONLINE 開設</td>
+        <td>「愛煙家のためのECサイト」としてオープン</td>
+      </tr>
+      <tr>
+        <td>2022年8月</td>
+        <td>大手町プレイス店「DXカフェ」リニューアル</td>
+        <td>セルフレジ2台による非接触オーダー、カメラによる混雑可視化をWeb掲載</td>
+      </tr>
+      <tr>
+        <td>継続</td>
+        <td>画像認証による年齢確認</td>
+        <td>業界で数少ない仕組みとして紹介されている（外部レビュー記事より）</td>
+      </tr>
+    </table>
+
+    <h2>3. 市場・競合ポジショニング分析</h2>
+    <p>公開情報ベースで、喫煙具・たばこ通販領域の主要プレイヤーを「品揃えの専門性・希少性」×「リアル体験接点の強さ」の2軸で整理しました。</p>
+
+    <svg viewBox="0 0 720 420" width="100%" style="max-width:680px; display:block; margin: 10px auto; font-family: inherit;">
+      <!-- axes -->
+      <line x1="80" y1="30" x2="80" y2="360" stroke="var(--grid)" stroke-width="1"/>
+      <line x1="80" y1="360" x2="660" y2="360" stroke="var(--grid)" stroke-width="1"/>
+      <line x1="370" y1="30" x2="370" y2="360" stroke="var(--grid)" stroke-width="1" stroke-dasharray="3,4"/>
+      <line x1="80" y1="195" x2="660" y2="195" stroke="var(--grid)" stroke-width="1" stroke-dasharray="3,4"/>
+      <!-- axis labels -->
+      <text x="370" y="392" text-anchor="middle" font-size="12.5" fill="var(--text-secondary)">品揃えの専門性・希少性 →</text>
+      <text x="30" y="195" text-anchor="middle" font-size="12.5" fill="var(--text-secondary)" transform="rotate(-90 30 195)">リアル体験接点の強さ →</text>
+      <text x="655" y="378" text-anchor="end" font-size="11" fill="var(--text-muted)">高</text>
+      <text x="86" y="378" text-anchor="start" font-size="11" fill="var(--text-muted)">低</text>
+      <text x="66" y="40" text-anchor="end" font-size="11" fill="var(--text-muted)">高</text>
+      <text x="66" y="358" text-anchor="end" font-size="11" fill="var(--text-muted)">低</text>
+      <!-- quadrant hint -->
+      <text x="655" y="44" text-anchor="end" font-size="12" fill="var(--text-muted)" font-style="italic">文化体験提案ゾーン</text>
+
+      <!-- points: cx range 80-660, cy range 30-360 -->
+      <!-- BRIQUET ONLINE: high spec(560), high real(90) -->
+      <circle cx="560" cy="90" r="9" fill="var(--series-1)"/>
+      <text x="560" y="112" text-anchor="middle" font-size="12.5" fill="var(--text-primary)" font-weight="600">BRIQUET ONLINE</text>
+
+      <!-- シリウスタバコ: high spec(560), low real(300) -->
+      <circle cx="560" cy="300" r="8" fill="var(--series-2)"/>
+      <text x="560" y="322" text-anchor="middle" font-size="12" fill="var(--text-primary)">シリウスタバコ</text>
+
+      <!-- タバコエクスプレス: mid-high spec(470), low real(320) -->
+      <circle cx="470" cy="320" r="8" fill="var(--series-3)"/>
+      <text x="470" y="342" text-anchor="middle" font-size="12" fill="var(--text-primary)">タバコエクスプレス</text>
+
+      <!-- いづみや: mid spec(340,シャグ特化), low real(310) -->
+      <circle cx="340" cy="310" r="8" fill="var(--series-4)"/>
+      <text x="340" y="332" text-anchor="middle" font-size="12" fill="var(--text-primary)">いづみや</text>
+
+      <!-- 総合モール: low spec(160), low real(340) -->
+      <circle cx="160" cy="340" r="8" fill="var(--series-5)"/>
+      <text x="160" y="362" text-anchor="middle" font-size="12" fill="var(--text-primary)" dy="14">楽天市場／価格.com等 総合モール</text>
+    </svg>
+    <div class="legend-row">
+      <span><span class="legend-dot" style="background:var(--series-1)"></span>BRIQUET ONLINE</span>
+      <span><span class="legend-dot" style="background:var(--series-2)"></span>シリウスタバコ</span>
+      <span><span class="legend-dot" style="background:var(--series-3)"></span>タバコエクスプレス</span>
+      <span><span class="legend-dot" style="background:var(--series-4)"></span>いづみや</span>
+      <span><span class="legend-dot" style="background:var(--series-5)"></span>総合モール</span>
+    </div>
+    <p class="quad-caption">
+      各社の位置づけは公開サイト・記事情報からの定性評価であり、売上等の定量データに基づくものではありません。
+      シリウスタバコ・タバコエクスプレス・いづみやはオンライン専業型、総合モールは幅広いが専門性が薄い立ち位置。
+      BRIQUET ONLINEのみ「専門性の高さ」と「リアル店舗での体験接点」を両立しており、右上の独自ゾーンにいます。
+    </p>
+
+    <table>
+      <tr><th>プレイヤー</th><th>特徴</th><th>弱み・機会</th></tr>
+      <tr>
+        <td>BRIQUET ONLINE</td>
+        <td>100年超の卸知見、希少品・パイプ等の幅広い品揃え、リアル店舗2拠点、画像認証年齢確認</td>
+        <td>リアルとオンラインの回遊導線・会員基盤の一体化が伸びしろ</td>
+      </tr>
+      <tr>
+        <td>シリウスタバコ</td>
+        <td>紙巻・手巻き・葉巻・パイプ・煙管まで国内最大級の品揃え</td>
+        <td>オンライン専業、体験接点なし</td>
+      </tr>
+      <tr>
+        <td>タバコエクスプレス</td>
+        <td>紙巻・葉巻中心、輸入たばこのラインナップが強み</td>
+        <td>品揃えの幅は限定的、体験接点なし</td>
+      </tr>
+      <tr>
+        <td>いづみや</td>
+        <td>和たばこ・手巻き用シャグに特化</td>
+        <td>専門領域が狭い、体験接点なし</td>
+      </tr>
+      <tr>
+        <td>総合モール（楽天市場・価格.com 等）</td>
+        <td>集客力・比較のしやすさ</td>
+        <td>専門知識・ストーリー訴求が弱く価格競争になりやすい</td>
+      </tr>
+    </table>
+    <p class="src">
+      出所：<a href="https://www.motobayashi.co.jp/business/smoking/">株式会社元林 BRIQUET事業ページ</a>、
+      <a href="https://www.motobayashi.co.jp/corporate/history/">同社沿革</a>、
+      <a href="https://www.tabako.co.jp/">シリウスタバコ公式サイト</a>、
+      <a href="https://relazo.net/tobacco-online/">タバコ通販比較記事（relazo.net）</a> ほか公開情報（2026年8月時点）
+    </p>
+
+    <h2>4. 顧客の声・市場からの示唆</h2>
+    <div class="todo">
+      <strong>お断り：</strong> 本項目は貴社ユーザーへの一次インタビューを実施したものではなく、公開されている
+      レビュー記事・口コミサイトの二次情報を要約したものです。契約後のキックオフで一次インタビューを実施することを
+      別途ご提案します（4.2参照）。
+    </div>
+    <h3><span class="num">4.1</span>公開情報から見える利用者の評価ポイント</h3>
+    <ul>
+      <li>専門店でしか手に入りにくい商品を自宅から購入できる利便性が評価されている</li>
+      <li>初回購入時のクーポン等、新規登録の特典がメリットとして紹介されている</li>
+      <li>口コミ・レビュー機能がサイト内にあり、商品選びの参考にされている</li>
+      <li>クレジットカード・PayPay等、決済手段の多さが利便性として言及されている</li>
+      <li>年齢確認の仕組み（画像認証）が安心材料として紹介されている</li>
+    </ul>
+    <p class="src">
+      出所：<a href="https://ss624034.stars.ne.jp/category5/entry684.html">「ブリケオンラインは安全？口コミや利用するメリットは？」</a>（2026年8月時点の公開情報）
+    </p>
+
+    <h3><span class="num">4.2</span>一次インタビューのご提案（実施主体：貴社＋当社）</h3>
+    <p>上記はあくまで断片的な二次情報です。以下の設計で、既存会員・カフェ来店客への一次インタビューをキックオフ初期に実施することを推奨します。</p>
+    <table>
+      <tr><th>対象</th><th>人数目安</th><th>主な確認事項</th></tr>
+      <tr>
+        <td>ECのみ利用の会員</td>
+        <td>5〜6名</td>
+        <td>購入のきっかけ、リピート理由、離脱・不満点、サブスクへの抵抗感</td>
+      </tr>
+      <tr>
+        <td>カフェ来店経験がありEC未利用の顧客</td>
+        <td>5〜6名</td>
+        <td>ECへ移行しない理由、店舗とオンラインの使い分け意識</td>
+      </tr>
+      <tr>
+        <td>カフェ・EC両方を利用する顧客</td>
+        <td>3〜4名</td>
+        <td>両接点をどう回遊しているか、統合会員化への期待</td>
+      </tr>
+    </table>
+
+    <h2>5. ご提案施策</h2>
+
+    <h3><span class="num">5.1</span>リアル接点活用（O2O）</h3>
+    <div class="card">
+      <strong>店舗×ECの会員一体化</strong><br>
+      大手町プレイス店・越谷レイクタウン店の来店時にQRで会員登録／EC連携し、店舗purchases とECの購買履歴を
+      一つの会員IDに統合。店舗限定の試喫（テイスティング）イベントをECの新商品ローンチと連動させる。
+    </div>
+    <div class="card">
+      <strong>DXカフェの可視化機能を接客導線に活用</strong><br>
+      既に導入済みの混雑可視化カメラ・セルフレジのデータを、来店予約特典や「空いている時間帯にEC限定クーポン」等の
+      施策に転用し、店舗の閑散時間帯の来店を後押しする。
+    </div>
+    <div class="card">
+      <strong>店舗発の「愛煙家コミュニティ」形成</strong><br>
+      店舗スタッフの専門知識を活かした少人数の喫煙具講座・新商品お披露目会を定期開催し、参加者をEC会員化・
+      サブスク加入に誘導する。
+    </div>
+
+    <h3><span class="num">5.2</span>サブスク設計</h3>
+    <table>
+      <tr><th>プラン案</th><th>内容</th><th>狙い</th></tr>
+      <tr>
+        <td>消耗品定期便</td>
+        <td>シャグ・巻紙・フィルター等、消耗頻度の高い商品を月次自動配送</td>
+        <td>継続購入化によるLTV向上</td>
+      </tr>
+      <tr>
+        <td>キュレーションボックス</td>
+        <td>希少パイプ・輸入葉巻など、卸ネットワークならではの厳選品を毎月提案</td>
+        <td>100年の目利き力の商品化、新規商材の試用機会</td>
+      </tr>
+      <tr>
+        <td>会員ステータス（カフェ×EC共通）</td>
+        <td>年間購入額に応じ、カフェ割引・送料無料・新商品先行案内を付与</td>
+        <td>リアルとECの相互送客、離脱防止</td>
+      </tr>
+    </table>
+    <p class="note">
+      たばこ関連商品の定期配送は年齢確認・数量管理の継続的な担保が必須です。初回の画像認証に加え、
+      配送のたびの本人確認・購入上限設計など、コンプライアンス要件を初期設計段階で整理する必要があります。
+    </p>
+
+    <h3><span class="num">5.3</span>商品企画</h3>
+    <ul>
+      <li><strong>復刻・オマージュ企画</strong>：創業期にヒットした「ハッカパイプ」等、120年の歴史資産をモチーフにした復刻・別注アイテム</li>
+      <li><strong>BRIQUETオリジナルPB</strong>：卸で培った目利きを活かした自社ブランドの喫煙具ライン（パイプ、ライター等）</li>
+      <li><strong>季節・地域限定企画</strong>：越谷・大手町それぞれの店舗発の地域限定コラボや季節限定フレーバー展開</li>
+      <li><strong>初心者向けスタートセット</strong>：パイプ・葉巻など参入障壁の高いカテゴリを、店舗スタッフ監修の入門セットとしてEC化</li>
+    </ul>
+
+    <h2>6. 推進体制</h2>
+    <div class="todo">
+      <strong>ご記入ください：</strong> 以下は体制図のフォーマット例です。実際のアサインメンバー・役割・稼働率は、
+      貴社要件確定後に当社側の実プロジェクト体制を反映して更新します。
+    </div>
+    <table>
+      <tr><th>役割</th><th>担当</th><th>主な責任範囲</th></tr>
+      <tr><td>プロジェクトオーナー</td><td class="placeholder">［貴社ご担当者名］</td><td>最終意思決定、社内調整</td></tr>
+      <tr><td>プロジェクトマネージャー</td><td class="placeholder">［当社 担当者名］</td><td>全体進行管理、貴社窓口</td></tr>
+      <tr><td>戦略・企画</td><td class="placeholder">［当社 担当者名］</td><td>ポジショニング、サブスク・商品企画設計</td></tr>
+      <tr><td>クリエイティブ／EC実装</td><td class="placeholder">［当社 担当者名］</td><td>サイト・販促クリエイティブ制作</td></tr>
+      <tr><td>データ・分析</td><td class="placeholder">［当社 担当者名］</td><td>会員データ統合、効果検証</td></tr>
+    </table>
+
+    <h2>7. 当社の実績</h2>
+    <div class="todo">
+      <strong>ご記入ください：</strong> 本ワークスペース内には貴社向け提案の裏付けとなる当社の実績データ（過去案件名・
+      成果数値・事例）が登録されていません。捏造した実績を記載することは避け、営業チーム側で保有する実績資料を
+      挿入のうえ確定版としてください。
+    </div>
+    <table>
+      <tr><th>領域</th><th>実績</th></tr>
+      <tr><td>EC / D2C支援</td><td class="placeholder">［類似業態・規模の支援実績を記載］</td></tr>
+      <tr><td>サブスクリプション設計</td><td class="placeholder">［設計〜運用支援の実績を記載］</td></tr>
+      <tr><td>O2O / リアル店舗連携</td><td class="placeholder">［店舗×ECの連携施策実績を記載］</td></tr>
+    </table>
+
+    <h2>8. 想定スケジュール（概算）</h2>
+    <table>
+      <tr><th>フェーズ</th><th>期間目安</th><th>内容</th></tr>
+      <tr><td>Phase 0：キックオフ・一次インタビュー</td><td>1〜3週目</td><td>体制確定、顧客インタビュー実施、要件確定</td></tr>
+      <tr><td>Phase 1：施策設計</td><td>4〜7週目</td><td>O2O導線設計、サブスクプラン確定、商品企画の絞り込み</td></tr>
+      <tr><td>Phase 2：構築・準備</td><td>8〜12週目</td><td>EC実装、会員基盤統合、コンプライアンス要件整備</td></tr>
+      <tr><td>Phase 3：先行リリース</td><td>13週目〜</td><td>一部店舗・会員限定でのパイロット実施、効果検証</td></tr>
+    </table>
+    <p class="note">期間はヒアリング前の概算です。要件確定後に精緻化します。</p>
+
+    <h2>9. 次のステップ</h2>
+    <ol>
+      <li>本提案書の内容について、貴社ご担当者様とのすり合わせミーティングを設定</li>
+      <li>一次インタビュー（4.2）の対象者選定・実施日程の調整</li>
+      <li>体制（6章）・実績（7章）の確定版情報を当社側で追記のうえ、最終版提案書として再提出</li>
+    </ol>
+
+    <div class="footer-page">BRIQUET ONLINE様 ご提案書 ／ 2026年8月28日作成 ／ 社外秘</div>
+  </div>
+</body>
+</html>
